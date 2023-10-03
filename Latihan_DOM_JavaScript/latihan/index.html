@@ -5,14 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        html, body {
+            height: 100%;
+        }
         body {
             text-align: center;
+        }
+        .salmon {
+            background-color: salmon;
+        }
+        .kotak {
+            width: 25px;
+            height: 25px;
+            margin: 10px auto;
+        }
+        .merah {
+            background-color: red;
+        }
+        .hijau {
+            background-color: green;
+        }
+        .biru {
+            background-color: blue;
         }
     </style>
 </head>
 <body>
     <h1>Bermain dengan Warna</h1>
-    
+    <button type="button" id="tombolUbahWarna">Ubah Bg</button>
+
+    <br><br>
+    <div class="kotak merah"></div>
+    <input type="range" name="red" id="redSlide" min="0" max="255" value="0">
+    <div class="kotak hijau"></div>
+    <input type="range" name="green" id="greenSlide" min="0" max="255" value="0">
+    <div class="kotak biru"></div>
+    <input type="range" name="blue" id="blueSlide" min="0" max="255" value="0">
+
 <script src="memanipulasiWarna.js"></script>
 </body>
 </html>
