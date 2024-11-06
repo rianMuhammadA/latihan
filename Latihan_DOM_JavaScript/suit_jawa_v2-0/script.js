@@ -60,6 +60,7 @@ function getHasil(comp,player) {
 // });
 
 
+
 function putar(){
     const imgComputer = document.querySelector('.img-computer');
     const gambar = ['gajah','semut','orang']
@@ -74,6 +75,9 @@ function putar(){
         if(i == gambar.length) i =0
     },100)
 }
+let jPlayer = 0;
+let jComp = 0;
+let jSeri = 0;
 
 const pilihan = document.querySelectorAll('li img');
 pilihan.forEach(function(pil){
@@ -81,6 +85,12 @@ pilihan.forEach(function(pil){
     const pilihanComputer = getPilihanComputer();
     const pilihanPlayer = pil.className;
     const hasil = getHasil(pilihanComputer, pilihanPlayer);
+    const winComp = document.querySelector('.count-comp');
+    const winPlayer = document.querySelector('.count-player');
+    const seri = document.querySelector('.seri');
+    const jRound = document.querySelector('.round');
+
+
 
     putar()
 
@@ -91,11 +101,29 @@ pilihan.forEach(function(pil){
     
         const info = document.querySelector('.info');
         info.innerHTML = hasil.toUpperCase();
+        
+        if (hasil === 'KALAH!'){
+            winComp.innerHTML = ++jComp;
+        }
+        if (hasil === 'MENANG!') {
+            winPlayer.innerHTML = ++jPlayer;
+        }
+        if (hasil === 'SERI!') {
+            seri.innerHTML = ++jSeri;
+        }
+        jRound.innerHTML = jSeri + jPlayer + jComp;
     }, 1100)
+
+
+
+
 })
 
 })
+
+
 
 // ^program di atas adalah fersi sederhana dari 3 program yang ada do baris 17 - 60 "mungkin masih bisa disederhanakan menjadi lehib baik lagi idk"^
+
 
 

@@ -112,6 +112,42 @@ h1 {
     font-size: 26px;
     text-shadow: 1px 1px 1px rgba(0,0,0,.3);
 }
+.count-comp{
+    width: 60px;
+    height: 60px;
+    border: 5px solid lightblue;
+    position: absolute;
+    left: 50%;
+    margin-left: 210px;
+    top: 41%;
+    margin-top: -30px;
+    background-color: white;
+    border-radius: 30px;
+    z-index: 1;
+    text-align: center;
+    line-height: 60px;
+    color: black;
+    font-size: 26px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+.count-player{
+    width: 60px;
+    height: 60px;
+    border: 5px solid lightgreen;
+    position: absolute;
+    left: 50%;
+    margin-left: -280px;
+    top: 57%;
+    margin-top: -30px;
+    background-color: white;
+    border-radius: 30px;
+    z-index: 1;
+    text-align: center;
+    line-height: 60px;
+    color: black;
+    font-size: 26px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
 
 ul {
     padding-top: 80px;
