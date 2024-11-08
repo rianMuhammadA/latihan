@@ -33,6 +33,7 @@ closes.forEach(function(el){
     el.addEventListener('click',function(e){
         e.target.parentElement.style.display = 'none';
         e.preventDefault();
+        e.stopPropagation();
     });
 });
 
@@ -42,3 +43,11 @@ closes.forEach(function(el){
 // console.log(nama.parentElement.nextElementSibling);
 
 // ^dua baris code diatas hanya untuk mencoba method-method yang ada dalam DOM Traversal, contoh lain selain parentElement ada : .nextElementSibling | .previousElementSibling | .parentNode | .nextSibling (dan lain sebagainya)^
+
+
+const cards = document.querySelectorAll('.card');
+cards.forEach(function(card){
+    card.addEventListener('click', function(e){
+        alert('ok');
+    });
+});
