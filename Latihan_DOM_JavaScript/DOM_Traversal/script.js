@@ -17,7 +17,7 @@
 
 
 // DOM Traversal
-const closes = document.querySelectorAll('.close');
+// const closes = document.querySelectorAll('.close');
 // for(let i =0; i < close.length; i++){
 //     close[i].addEventListener('click',function(e){
 //         // close[i].parentElement.style.display = 'none';
@@ -29,13 +29,13 @@ const closes = document.querySelectorAll('.close');
 // ^perintah diatas adalah untuk merepresentasikan prinsip DOM Traversal, yang mana dengan menggunakan prinsip itu, masalah yang dialami pada program yang pertama bisa diatasi.^
 
 
-closes.forEach(function(el){
-    el.addEventListener('click',function(e){
-        e.target.parentElement.style.display = 'none';
-        e.preventDefault();
-        e.stopPropagation();
-    });
-});
+// closes.forEach(function(el){
+//     el.addEventListener('click',function(e){
+//         e.target.parentElement.style.display = 'none';
+//         e.preventDefault();
+//         e.stopPropagation();
+//     });
+// });
 
 // ^perintah di atas sama dengan perintah yang ada pada baris 21 - 27, hanya pada perulangannya menggunakan foreach, sehingga kita tidak perlu menuliskan atau membuat variable baru dan yang lainnya, lebih mudah dan singkat juga tentunya^ 
 
@@ -45,9 +45,21 @@ closes.forEach(function(el){
 // ^dua baris code diatas hanya untuk mencoba method-method yang ada dalam DOM Traversal, contoh lain selain parentElement ada : .nextElementSibling | .previousElementSibling | .parentNode | .nextSibling (dan lain sebagainya)^
 
 
-const cards = document.querySelectorAll('.card');
-cards.forEach(function(card){
-    card.addEventListener('click', function(e){
-        alert('ok');
-    });
+// const cards = document.querySelectorAll('.card');
+// cards.forEach(function(card){
+//     card.addEventListener('click', function(e){
+//         alert('ok');
+//     });
+// });
+
+
+const container = document.querySelector('.container')
+
+container.addEventListener('click', function(e){
+    if(e.target.className == 'close'){
+        e.target.parentElement.style.display = 'none'
+        e.preventDefault()
+    }
 });
+
+// ^code di atas untuk mengatasi masalah event close, apabila ada card tambahan di containernya secara langsung dalam webnya.^
