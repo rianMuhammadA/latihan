@@ -32,12 +32,13 @@ const closes = document.querySelectorAll('.close');
 closes.forEach(function(el){
     el.addEventListener('click',function(e){
         e.target.parentElement.style.display = 'none';
+        e.preventDefault();
     });
 });
 
 // ^perintah di atas sama dengan perintah yang ada pada baris 21 - 27, hanya pada perulangannya menggunakan foreach, sehingga kita tidak perlu menuliskan atau membuat variable baru dan yang lainnya, lebih mudah dan singkat juga tentunya^ 
 
-const nama = document.querySelector('.nama');
-console.log(nama.parentElement.nextElementSibling);
+// const nama = document.querySelector('.nama');
+// console.log(nama.parentElement.nextElementSibling);
 
 // ^dua baris code diatas hanya untuk mencoba method-method yang ada dalam DOM Traversal, contoh lain selain parentElement ada : .nextElementSibling | .previousElementSibling | .parentNode | .nextSibling (dan lain sebagainya)^
