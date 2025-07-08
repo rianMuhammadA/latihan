@@ -61,7 +61,7 @@ body {
     cursor: pointer;
 }
 
-.card:hover .close {
+.close:hover {
     color: red;
 }
 
