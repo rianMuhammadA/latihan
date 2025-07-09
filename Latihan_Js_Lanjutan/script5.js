@@ -29,17 +29,96 @@
 
 
 
-let mahasiswa = ['rian','kurniawan','angga']
+// let mahasiswa = ['rian','kurniawan','angga']
+// // without arrow function
+// // let jumlahHuruf = mahasiswa.map(function(nama){
+// //     return nama.length
+// // })
+// // console.log(jumlahHuruf);
+
+// // with arrow function
+// // let jumlahHuruf = mahasiswa.map(nama => nama.length)
+// // console.log(jumlahHuruf);
+
+// // nama di dalam function sama dengan nama: nama,
+// let jumlahHuruf = mahasiswa.map(nama => ({nama, jumlahHuruf: nama.length}))
+// console.table(jumlahHuruf);
+
+
+// penggunaan konsep "this" dalam arrow function
+
+// constructor function
 // without arrow function
-// let jumlahHuruf = mahasiswa.map(function(nama){
-//     return nama.length
-// })
-// console.log(jumlahHuruf);
+// const Mahasiswa = function() {
+//     this.nama = 'rian'
+//     this.umur = 20
+//     this.sayHello = function(){
+//         console.log(`Halo, nama saya ${this.nama}, dan saya berumur ${this.umur}`);
+//     }
+// }
+
+// const rian = new Mahasiswa()
 
 // with arrow function
-// let jumlahHuruf = mahasiswa.map(nama => nama.length)
-// console.log(jumlahHuruf);
+// const Mahasiswa = function() {
+//     this.nama = 'rian'
+//     this.umur = 20
+//     this.sayHello = () =>{
+//         console.log(`Halo, nama saya ${this.nama}, dan saya berumur ${this.umur}`);
+//     }
+// }
 
-// nama di dalam function sama dengan nama: nama,
-let jumlahHuruf = mahasiswa.map(nama => ({nama, jumlahHuruf: nama.length}))
-console.table(jumlahHuruf);
+// const rian = new Mahasiswa()
+
+
+
+// Object literal
+// const mhs1 = {
+//     nama: 'rian',
+//     umur: 20, 
+//     sayHello: ()  =>{
+//         // console.log(`Halo, nama saya ${this.nama}, dan saya berumur ${this.umur}`);
+//         console.log(this);
+//     }
+// }
+
+
+// const Mahasiswa = function() {
+//     this.nama = 'rian'
+//     this.umur = 20
+//     this.sayHello = function(){
+//         console.log(`Halo, nama saya ${this.nama}, dan saya berumur ${this.umur}`);
+//     }
+
+//     // setInterval(() => {
+//     //     console.log(this.umur++);
+//     // }, 500)
+
+// }
+
+// const rian = new Mahasiswa()
+
+
+
+
+
+
+const box = document.querySelector('.box')
+
+box.addEventListener('click', function(){
+    let satu = 'size'
+    let dua = 'caption'
+
+    if (this.classList.contains(satu)) {
+        [satu, dua] = [dua, satu]
+    }
+
+
+    // let that = this
+    this.classList.toggle(satu)
+    // setTimeout(function(){
+    //     that.classList.toggle('caption')
+    setTimeout(() => {
+        this.classList.toggle(dua)
+    }, 600)
+})
