@@ -1,0 +1,23 @@
+[
+    {
+        "nama": "Rian Muhammad Afriansyah",
+        "nisn": "9128436",
+        "email": "rian@gmail.com",
+        "jurusan": "Rekayasa Perangkat Lunak",
+        "idDosenWali": 1
+    },
+    {
+        "nama": "Ahmad Dahlan",
+        "nisn": "9123436",
+        "email": "ahmad@gmail.com",
+        "jurusan": "Multimedia",
+        "idDosenWali": 2
+    },
+    {
+        "nama": "Jajang wahyudi",
+        "nisn": "9128423",
+        "email": "wahyudi@gmail.com",
+        "jurusan": "PGSD",
+        "idDosenWali": 2
+    }
+]
