@@ -10,4 +10,4 @@ const jokesService = new JokesService();
 
 run(alertService, calculatorService, jokesService);
 
-alert('Halo Rian')
+alert('Halo rian')
