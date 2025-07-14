@@ -8,3 +8,40 @@ bertujuan untuk
     "Satu modul hanya mengerjakan hal yang spesifik saja"
 * Organization
     "Kemudahan pengelolaan aplikasi secara keseluruhan"
+
+
+Sejarah System module Javascript
+
+* 1995-2000 = javascript belum ada module system karena keterbatasan waktu pembuatannya
+* 2000-2010 = para programmer mencari cara membuat modul di js sehingga tercipta IIFE(Immediately invoked function Expression) yang mana dia membuat function tanpa nama yang otomatis dijalankan ketika dibuat
+* 2010-2015 = dikarenakan munculnya js di sisi server yakni node.js sehingga ditemukan cara yang disepakati bernama CommonJS
+* 2015-2022? = sudah ada teknik resmi yang disebut dengan ES6 Modules
+
+
+Tahapan Bagaimana para programmer menulis modules di JS
+
+- No Modules (saat sebelum adanya module pada js)
+    > Harus membuat fungsi pembungkus / wrapper function
+    > Agar memiliki scope, sehingga tidak global variable
+    > Tetap muncul function wrapper yang bisa diakses secara global
+    > Kurang reusable
+    > Masalah pengelolaan dependency
+
+- IFFE (menggunakan Immediately Invoked Function Expression)
+    > Tidak perlu membuat nama function
+    > Tidak perlu menjalankan function
+    > Tidak ada function yang bisa diakses secara global
+    > Harus ditulis di setiap module
+    > Masih bukan module system
+
+- CommonJS (Module formatting system)
+    > Menggunakan keyword module.exports dan require()
+    > Synkronus
+    > Di terapkan di dalam  nodeJS
+    > Butuh moduler bundle jika ingin dijalankan di browser
+
+- ES6 Module (ECMAScript Harmony)
+    > Menggunakan keyword exports dan import
+    > Ainkronus
+    > Tidak butuh module bundler jika ingin dijalankan di browser
+    > Tambahan type="module" saat pemanggilan script
