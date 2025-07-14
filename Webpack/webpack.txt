@@ -89,3 +89,5 @@ KOMPONEN KONFIGURASI WEBPACK (yang akan dibahas di playlis WPU)
     * Browser Compability
 
 cara install ('npm install webpack--cli --save-dev')
+
+Detail lengkap mengenai apa saja perintah yang bisa dimasukkan pada terminal untuk webpack ini ada di website https://webpack.js.org/api/cli/
