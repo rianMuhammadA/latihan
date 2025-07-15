@@ -45,3 +45,56 @@ Tahapan Bagaimana para programmer menulis modules di JS
     > Ainkronus
     > Tidak butuh module bundler jika ingin dijalankan di browser
     > Tambahan type="module" saat pemanggilan script
+
+
+
+APA ITU WEBPACK?
+    Adalah salah satu dari software tooling yang dapat kita gunakan disebut dengan Module Bundler
+    APASIH MODULE BUNDLER?
+        Module Bundler adalah sebuah tool yang mengabil code-code javascript yang kita gunakan (beserta dengan dependency-nya) dan mem-bundle / menggabungkan-nya menjadi sebuah file (biasanya digunakan di browser) ~ freecodecamp.org
+    Dengan menggunakan Module Bundler kita bisa melakukan
+        * Melakukan penggabungan dan pengelolaan dependencies secara otomatis
+        * Bahkan dapat melakukan minfy / uglify terhadap file agar ukurannya menjadi semakin kecil
+    Macam-macam module bundler
+        - browserify
+        - webpack
+        - rollupjs
+        - parceljs
+        - snowpack
+        - vitejs
+
+ALASAN PAKE WEBPACK
+    * the most downloaded is webpack tahun 2022
+    * banyak yang menyukai module bundler dari webpack tahun 2022
+
+KEKURANGAN WEBPACK
+    * kecepatan dalam build dikenal lebih lambat danri module bundler yang lain
+
+FITUR-FITUR WEBPACK
+    * Dependency management
+    * Hot module replacement
+    * Caching
+    * Support modules: ES Modules, CommonJS, AMD Module
+    * Transpile older Javascript
+    * Bundle CSS & Images
+    * Asset optimization       
+    * Increase developer productivity & experience
+
+KOMPONEN KONFIGURASI WEBPACK (yang akan dibahas di playlis WPU)
+    * Entry
+    * Output
+    * Mode
+    * Loaders
+    * Plugins
+    * Browser Compability
+
+cara install ('npm install webpack--cli --save-dev')
+
+Detail lengkap mengenai apa saja perintah yang bisa dimasukkan pada terminal untuk webpack ini ada di website https://webpack.js.org/api/cli/
+
+
+# Webpack Loaders
+    ini adalah sebuah fitur pada webpack untuk melakukan bundle pada sumberdaya statis selain javascript
+
+# cache
+    caching ini adalah sebuah teknik untuk menyimpan data di dalam komponen hardware atau software, dilakukan agar request berikutnya untuk data tersebut terjadi dengan lebih cepat
