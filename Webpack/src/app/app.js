@@ -26,3 +26,4 @@ export const run = (alertService, calculatorService, jokesService) => {
   });
 };
 
+console.log('s');
