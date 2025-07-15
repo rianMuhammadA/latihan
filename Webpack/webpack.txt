@@ -95,3 +95,6 @@ Detail lengkap mengenai apa saja perintah yang bisa dimasukkan pada terminal unt
 
 # Webpack Loaders
     ini adalah sebuah fitur pada webpack untuk melakukan bundle pada sumberdaya statis selain javascript
+
+# cache
+    caching ini adalah sebuah teknik untuk menyimpan data di dalam komponen hardware atau software, dilakukan agar request berikutnya untuk data tersebut terjadi dengan lebih cepat
